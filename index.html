@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!--SECCION PARA PRODUCTOS-->
+    <div class="d-flex container">
+        <div class="row hamburguer justify-content-around mt-5">
+            <div class="col-sm-6 col-md-6 col-xl-3 card item">
+                <img class="w-100 paddingCard item-image" src="./img/amirali-mirhashemian-88YAXjnpvrM-unsplash.jpg" alt="">
+                <div class="description item-details ">
+                    <div class="product-name item-title">Hamburguesa simple con cheddar</div>
+                    <div class="price item-price">$800</div>
+                    <button class="shop addToCart">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xl-3 paddingCard card item">
+                <img class="w-100 item-image" src="./img/amirali-mirhashemian-88YAXjnpvrM-unsplash.jpg" alt="">
+                <div class="description item-details">
+                    <div class="product-name item-title">Hamburguesa doble con cheddar</div>
+                    <div class="price item-price">$950</div>
+                    <button class="shop addToCart">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-xl-3 paddingCard card item">
+                <img class="w-100 item-image" src="./img/amirali-mirhashemian-88YAXjnpvrM-unsplash.jpg" alt="">
+                <div class="description">
+                    <div class="product-name item-title">Hamburguesa triple con cheddar</div>
+                    <div class="price item-price">$1100</div>
+                    <button class="shop addToCart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PARA EL CARRITO-->
+    <section class="shopping-cart mt-5 mb-5">
+        <div class="container">
+            <h1 class="text-start">Carrito</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!--! SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!--! SHOPPING CART ITEMS -->
+
+            <!-- TOTAL Y TOAST EN EL CARRITO -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class=" d-flex align-items-center">
+                        <p class="mb-0 mt-3">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal mt-3 marginTitle">$0</p>
+                        <button class="btn btn-success comprarButton mt-3 marginTitle" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comprar</button>
+                    </div>
+                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+                        <div class="toast-header">
+                            <span>💰</span>
+                            <strong class="mr-auto ml-1 text-secondary">¡Anteción!</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body bg-danger text-white">
+                            ¡Agregaste otra hamburguesa al carrito!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TOTAL Y TOAST-->
+
+            <!-- Modal DE BOOTSTRAP -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">¡Gracias por tu compra!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            No olvides suscribirte al final de la página para recibir descuentos ¡hasta pronto!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Modal -->
+        </div>
+    </section>
+    <!--END SECCION PARA EL CARRITO-->
+
+    <div>
+        <img class="w-100" src="./img/grill-background-barbecue-fire-grill-close-up-isolated-on-black-background (1).jpg" alt="">
+    </div>
+
+
+    <!--? FORMULARIO -->
+    <article class="container mt-5 mb-5">
+        <form action="" method="POST" id="form">
+            <div>
+                <h1 class="text-start">Registrate</h1>
+                <hr>
+                <div class="col-6 ">
+                    <div class="grupo">
+                        <input class="inputform" type="text" name="" id="name"> <span></span>
+                        <label class="labelForm" for="">Nombre</label>
+                    </div>
+                    <div class="grupo">
+                        <input class="inputform" type="email" name="" id="email"> <span></span>
+                        <label class="labelForm" for="">Correo Electronico</label>
+                    </div>
+                    <div class="grupo">
+                        <input class="inputform" type="password" name="" id="password"> <span></span>
+                        <label class="labelForm" for="">Contraseña</label>
+                    </div>
+                    <p class="warnings text-center" id="warnings"></p>  
+                    <input class= "buttonsForm buttonRecordar" type="checkbox" id="rememberMe" value="remember-me">   Recordarme en este navegador
+                    <br>
+                    <button class="buttonsForm buttonConfirmar" type="submit" id="btnRegister">Confirmar</button>
+                </div>    
+            </div>
+        </form>
+    </article>
+    <!--? END FORMULARIO -->
+
+
+
+    <!-- TODO LO DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

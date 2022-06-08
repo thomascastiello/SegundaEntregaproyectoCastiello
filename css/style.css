@@ -1,0 +1,129 @@
+/* RESETEO GENERAL*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS */
+.description{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.product-name{
+    font-size: 1.2rem;
+    color: blue;
+}
+
+.price{
+    font-size: 2rem;
+    color: red;
+}
+
+
+.shop{
+    background-color: #80777744;
+    color: rgb(1, 37, 243);
+    margin-top: 4px;
+    margin-bottom: 10px;
+    box-shadow: rgb(66, 70, 66);
+    border-radius: 5px;
+    font-weight: bold;
+    max-width: 130px;
+    min-width: 80px;
+}
+
+.paddingCard{
+    padding-top: 1rem;
+}
+
+
+.marginTitle{
+    margin-left: 0.5rem;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+
+
+
+/*FORMULARIO*/
+
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+.inputform{
+    background-color: none;
+    color: #9b9b9b;
+    font-size: 18px;
+    padding: 5px 5px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.inputform:focus{
+    outline: none;
+    color: black;
+}
+
+
+.buttonsForm{
+    margin-left: 3rem;
+}
+
+.buttonRecordar{
+    margin-bottom: 1rem;
+}
+
+
+.labelForm{
+    color: #9b9b9b;
+    font-size: 16px;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+
+.inputform:focus~label,
+.inputform:valid~label{
+    top: -14px;
+    font-size: 14px;
+    color: black;
+}
+
+.buttonConfirmar{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    border: none;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    color: white;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: blue;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
